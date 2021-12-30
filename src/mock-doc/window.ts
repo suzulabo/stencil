@@ -802,6 +802,8 @@ export function cloneWindow(srcWin: Window, opts: { customElementProxy?: boolean
 
   const clonedWin = new MockWindow(false);
   if (!opts.customElementProxy) {
+    // TODO(NOW): don't do this
+    // @ts-ignore
     srcWin.customElements = null;
   }
 

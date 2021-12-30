@@ -47,6 +47,8 @@ export function initializeWindow(
   }
 
   try {
+    // TODO(NOW): don't do this
+    // @ts-ignore
     win.customElements = null;
   } catch (e) {}
 
