@@ -22,6 +22,8 @@
     "resolveJsonModule": true,
     "sourceMap": true,
     "target": "es2018",
+    // TODO(STENCIL-XXXX): Enable useUnknownInCatchVariables flag
+    "useUnknownInCatchVariables": false,
     "baseUrl": ".",
     "paths": {
       "@app-data": ["src/app-data/index.ts"],
