@@ -1,0 +1,11 @@
+{
+  "name": "outside-src",
+  "private": true,
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node ../../bin/stencil build",
+    "start": "node ../../bin/stencil build --debug --watch --dev --serve"
+  }
+}

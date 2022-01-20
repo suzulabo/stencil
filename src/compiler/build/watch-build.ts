@@ -132,6 +132,7 @@ export const createWatchBuild = async (config: d.Config, compilerCtx: d.Compiler
   const request = async (data: d.CompilerRequest) => compilerRequest(config, compilerCtx, data);
 
   compilerCtx.addWatchFile = (filePath) => {
+    console.log('addWatchFile:', filePath);
     if (isString(filePath) && !watchingFiles.has(filePath) && !isWatchIgnorePath(config, filePath)) {
       watchingFiles.set(filePath, config.sys.watchFile(filePath, onFsChange));
     }
